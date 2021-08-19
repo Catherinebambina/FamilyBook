@@ -1,0 +1,39 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family book</title>
+  <body>
+    <h1> Family book</h1>
+    <hr> <hr>
+    <img id="family_img" src="https://i.harperapps.com/covers/9780062914842/y648.jpg">
+    <h3 id="one">1. The Hoang/Nguyen Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "2. My Father (Hai Hoang)",
+   "3. My Mother (Ngoc Nguyen)",
+   "4. My Dog (Bambina Hoang)",
+   "5. Me (Catherine Hoang)",
+   "6. My grandparents"
+   ];
+ var images=[
+   "https://i.pinimg.com/originals/aa/1b/02/aa1b023628ae6df9b9470acbbbf9ae4e.jpg",
+   "https://www.ungeek.ph/wp-content/uploads/2018/05/Clara_Magnolia.jpg",
+   "https://www.marshallspetzone.com/5245-large_default/shih-tzu-puppies-for-sale.jpg",
+   "https://popcat.click/twitter-card.jpg",
+   "http://animationrevelation.com/readables/wp-content/uploads/2012/12/dmncap000022.png",
+
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==5){
+     i=0;
+   }}
+  </script>
+  <script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
